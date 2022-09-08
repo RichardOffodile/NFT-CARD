@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#vertical-align{
+	display: flex;
+	height: 100vh;
+}
+body{
+	background-color: hsl(217, 54%, 11%);
+	font-family: 'Outfit', sans-serif;
+}
+
+/*main*/
+main{
+	width: 350px;
+	height: 596px;
+
+	margin: auto auto;
+	padding: 24px;
+
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 16px;
+	box-shadow: 2px 2px 25px 1px rgba(0, 0, 0, 0.2)
+}
+img{
+	width: 302px;
+	border-radius: 10px;
+}
+h2{
+	color: hsl(0, 0%, 100%);
+	margin: 25px 0;
+}
+h2:hover{
+	cursor: pointer;
+	color: hsl(178, 100%, 50%);
+}
+p, span, main > div{
+	font-size: 18px;
+	color: hsl(215, 51%, 70%);
+	margin: 25px 0;
+	font-weight: 400;
+}
+p{
+	line-height: 1.5;
+}
+main > div:not(div:first-child){
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid hsl(215, 51%, 70%);
+	margin: 25px 0 0 0;
+	padding: 0 0 13px 0;
+}
+main > div:first-child{
+	margin: 0;
+	position: relative;
+}
+#hover{
+	display: flex;
+	width: 302px;
+	height: 302px;
+	position: absolute;
+	top: 0;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+#hover > img{
+	width: 42px;
+	margin: auto auto;
+	opacity: 0;
+	transition: 0.5s;
+}
+#hover:hover{
+	background-color: hsl(178, 100%, 50%, 0.4);
+	cursor: pointer;
+}
+#hover:hover > img{
+	opacity: 1;
+
+}
+div > span{
+	margin: 0;
+}
+main > span:last-child{
+	display: inline-block;
+	margin: 0;
+	padding: 13px 0 0 0;
+
+}
+#eth{
+	color: hsl(178, 100%, 50%);
+}
+span > img{
+	margin-right: 10px;
+	vertical-align: -1.9px;
+}
+span:first-child > img{
+	width: 12px;
+}
+span:last-child > img{
+	width: 16px;
+}
+
+
+main > span:last-child > img{
+	width: 32px;
+	border: 1.9px solid hsl(0, 0%, 100%);
+	border-radius: 100%;
+	vertical-align: -9px;
+}
+#author{
+	color: hsl(0, 0%, 100%);
+}
+#author:hover{
+	color: hsl(178, 100%, 50%);
+	cursor: pointer;
+}
+/*main*/
+
+/*footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: hsl(0, 0%, 100%);
+}
+/*footer*/
